@@ -10,6 +10,7 @@ node{
     .withSecret('jenkins-maven-settings','/root/.m2')
     .inside {
         sh 'mvn clean deploy'
+        step([$class: 'JUnitResultArchiver', testResults: '**/target/surefire-reports/TEST-*.xml'])
     }
   }
 }
