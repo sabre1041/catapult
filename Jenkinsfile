@@ -21,7 +21,7 @@ node{
         .withSecret('jenkins-maven-settings','/root/.m2')
         .inside {
             try {
-                sh 'mvn clean deploy'
+                sh 'mvn install'
             }
             catch(e) {
                 currentBuild.result = 'FAILURE'
