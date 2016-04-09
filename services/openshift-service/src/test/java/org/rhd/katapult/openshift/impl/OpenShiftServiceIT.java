@@ -2,6 +2,7 @@ package org.rhd.katapult.openshift.impl;
 
 import org.junit.Assert;
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.rhd.katapult.openshift.api.DuplicateProjectException;
 import org.rhd.katapult.openshift.api.OpenShiftProject;
@@ -14,6 +15,7 @@ import java.util.logging.Logger;
 /**
  * @author <a href="mailto:alr@redhat.com">Andrew Lee Rubinger</a>
  */
+@Ignore
 public class OpenShiftServiceIT {
 
     private static final Logger log = Logger.getLogger(OpenShiftServiceIT.class.getName());
